@@ -158,8 +158,11 @@ code { font-size: 0.875rem; }
 
   --color-card: color-mix(in srgb, var(--midground-base) 4%, var(--background-base));
   --color-card-foreground: var(--midground);
-  --color-primary: var(--midground);
-  --color-primary-foreground: var(--background-base);
+  /* Corporate brand primary — literal navy, decoupled from --midground so
+     body text (which stays on --midground) keeps its contrast on dark themes.
+     Paired with a white foreground for readable primary buttons/highlights. */
+  --color-primary: #002B5C;
+  --color-primary-foreground: #ffffff;
   --color-secondary: color-mix(in srgb, var(--midground-base) 6%, var(--background-base));
   --color-secondary-foreground: var(--midground);
   --color-muted: color-mix(in srgb, var(--midground-base) 8%, var(--background-base));
@@ -176,7 +179,7 @@ code { font-size: 0.875rem; }
   --color-warning: #ffbd38;
   --color-border: color-mix(in srgb, var(--midground-base) 15%, transparent);
   --color-input: color-mix(in srgb, var(--midground-base) 15%, transparent);
-  --color-ring: var(--midground);
+  --color-ring: #002B5C;
   --color-popover: color-mix(in srgb, var(--midground-base) 4%, var(--background-base));
   --color-popover-foreground: var(--midground);
 

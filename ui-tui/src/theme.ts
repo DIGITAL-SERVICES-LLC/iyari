@@ -235,10 +235,10 @@ function normalizeAnsiForeground(color: string): string {
 
 const BRAND: ThemeBrand = {
   name: 'Hermes Agent',
-  icon: '⚕',
+  icon: '›',
   prompt: '❯',
-  welcome: 'Type your message or /help for commands.',
-  goodbye: 'Goodbye! ⚕',
+  welcome: 'IYARI contigo, ¿qué necesitas?',
+  goodbye: '¡Hasta luego! ›',
   tool: '┊',
   helpHeader: '(^_^)? Commands'
 }
@@ -253,7 +253,7 @@ const cleanPromptSymbol = (s: string | undefined, fallback: string) => {
 
 export const DARK_THEME: Theme = {
   color: {
-    primary: '#FFD700',
+    primary: '#002B5C',
     accent: '#FFBF00',
     border: '#CD7F32',
     text: '#FFF8DC',
